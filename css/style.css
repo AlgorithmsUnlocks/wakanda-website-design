@@ -159,3 +159,42 @@ header #menu-btn:hover{
         grid-template-columns: repeat(3,1fr);
     }
 }
+
+/* Features Box */
+.features-box{
+    background-color: var(--primary-color);
+    padding: 3rem 0;
+    color: var(--white);
+}
+.features-box .features-content h4{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 18px;
+}
+.features-box .features-content h2{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.features-box .feature-grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    grid-gap: 2rem;
+    justify-content: center;
+}
+.features-box .grid-box{
+    padding: 3rem 0 0 0;
+}
+.features-box .box-img{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 2rem;
+}
+.features-box h3{
+    padding: 1.5rem 0;
+    font-size: 24px;
+}
+.features-box p{
+    font-size: 18px;
+    color: var(--white);
+}
