@@ -19,10 +19,10 @@
   <body>
     
     <!-- Wakanda Header Desing -->
-    <header class="header">
+    <header class="header header-fixed">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <a href="#" class="logo"><img src="img/wakanda-logo.png" alt="" width=" 60px"></a>
+                <a href="#" class="logo"><img src="img/wakanda-logo.png" alt="" class="img-fluid" width="120px" height="auto"></a>
                 <nav class="navbar">
                     <a href="#home">Home</a>
                     <a href="#aboutus">About Us</a>
@@ -37,33 +37,118 @@
 
 
     <!-- Hero Sections -->
-    <div class="container-fluid">
-        <div class="container hero-section">
-            <row class="row align-items-center">
-                <div class="col-md-6">
-                    <h3>Recruit top talented freelancer for your business ! </h3>
-                    <p>Connect you to thoudsands of talented freelancer from any industry. You can have the best people in just few simple steps.</p>
-                    <a href="#" class="contact-btn">Get Started</a>
+    <div class="hero-area">
+        <div class="container-fluid hero">
+            <div class="container hero-section">
+                <row class="row align-items-center">
+                    <div class="col-md-6">
+                        <h3>Recruit top talented freelancer <br/>for your business ! </h3>
+                        <p>Connect you to thoudsands of talented freelancer from any industry. You can have the best people in just few simple steps.</p>
+                       <div class="info-btn">
+                        <a href="#" class="get-btn">Get Started</a>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/hero-img.png" alt="" class="img-fluid" width="450px">
+                    </div>
+                </row>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Brand List -->
+    <div class="brand-list">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="grid-wrapper">
+                    <div class="grid-items">
+                        <img src="img/AirbnbLogo.png" alt="" class="img-fluid" width="120px">
+                    </div>
+                    <div class="grid-items">
+                        <img src="img/google.png" alt="" class="img-fluid" width="120px">
+                    </div>
+                    <div class="grid-items">
+                        <img src="img/SlackLogo.png" alt="" class="img-fluid" width="120px">
+                    </div>
+                    <div class="grid-items">
+                        <img src="img/NetflixLogo.png" alt="" class="img-fluid" width="120px">
+                    </div>
+                    <div class="grid-items">
+                        <img src="img/Amazon-Logo.png" alt="" class="img-fluid" width="120px">
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="img/hero-img.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Box -->
+    <div class="features-box">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="features-content text-center">
+                    <h4>Features</h4>
+                    <h2>The benefit of using<br> our platform</h2>
                 </div>
-            </row>
+                <div class="feature-grid-wrapper">
+                    <div class="grid-box">
+                        <img src="img/award.png" alt="" class="img-fluid box-img" >
+                        <h3>Professional & Fast</h3>
+                        <p>Search and hire the most talented freelancers to match your needs. No matter what you need done, we've got the perfect freelancer for you.</p>
+                    </div>
+                    <div class="grid-box">
+                        <img src="img/headphones.png" alt="" class="img-fluid box-img" >
+                        <h3>24/7 support</h3>
+                        <p>You have any concerns or questions? Don’t worry, we have our support team to help you at anytime and anywhere.</p>
+                    </div>
+                    <div class="grid-box">
+                        <img src="img/Vector.png" alt="" class="img-fluid box-img" >
+                        <h3>Safe & Secure</h3>
+                        <p>We know that safety is the most important thing for our customer, so all of our payments are processed instantly and securely.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <style>
-        .hero-section{
-          background-color: var(--white);
+        .features-box{
+            background-color: var(--primary-color);
+            padding: 3rem 0;
+            color: var(--white);
         }
-        .hero-section h3{
+        .features-box .features-content h4{
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 18px;
+        }
+        .features-box .features-content h2{
+            font-size: 42px;
             font-weight: 700;
-            font-size: 35px;
-            line-height: 125%;
-            letter-spacing: -0.222222px;
+            line-height: 3rem;
         }
-
+        .features-box .feature-grid-wrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,20rem);
+            grid-gap: 2rem;
+            justify-content: center;
+        }
+        .features-box .grid-box{
+            padding: 3rem 0 0 0;
+        }
+        .features-box .box-img{
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            padding: 2rem;
+        }
+        .features-box h3{
+            padding: 1.5rem 0;
+            font-size: 24px;
+        }
+        .features-box p{
+            font-size: 18px;
+            color: var(--white);
+        }
     </style>
-  
 
 
     <!-- External JS -->
